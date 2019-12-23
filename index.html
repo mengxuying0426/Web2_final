@@ -31,7 +31,6 @@
 				    	<li><a href="#"/>民宿</li>
 				    </ul>
 				</li>
-				<!-- <li><a href="#" class="a5">更多...</a></li> -->
 				<div class="login">
 				<li><a href="#">注册</a></li>
 				<li><a href="#">登录</a></li>
@@ -43,7 +42,9 @@
 	        <img id="img" src="images/b9.jpg" alt="">
 	    </div>
 	    <div class="above">
+	        <div class="im">
 	    	<img src="images/b15.png" alt="">
+	    	</div>
 	    </div>
 	    <div class="above1">
 	    	<img src="images/b5.jpg" alt="">
@@ -64,9 +65,11 @@
 	    </div>
 	    <div class="above2">
 	        <div class="text"><p>异国风情</p></div>
+	        <div class="a2">
 	    	<img src="images/b12.jpg" alt="">
 	    	<div class="hidden2">
 	    		<p class="p">您是否会在阿布扎比停留几个小时，亲身体验一下这座城市的魅力？您是否已经抵达阿布扎比，想知道未来几天怎样才能不虚此行？您是否希望规划您的家庭度假旅行，尽情享受在阿布扎比的美好时光？</p>
+	    	</div>
 	    	</div>
 	    </div>
 	    <div class="above3">
@@ -275,7 +278,6 @@
 		    	animate(right,{opacity:50});
 		    	clearInterval(timer);
 		    }
-		    //鼠标划出
 		     box.onmouseout=function(){
 		    	animate(left,{opacity:0});
 		    	animate(right,{opacity:0});
@@ -283,7 +285,6 @@
 		    }
 		    right.onclick=next;
             left.onclick=prev;
-            // 小按钮点击事件
             for(var i=0;i<oNavlist.length;i++){
             	oNavlist[i].idx=i;
             	oNavlist[i].onclick=function(){
@@ -292,7 +293,6 @@
             		animate(slider,{left:-340*index});
             	}
             }
-            //背景切换
             function navChange(){
             	for(var i=0;i<oNavlist.length;i++){
             		oNavlist[i].className='';
