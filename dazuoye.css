@@ -16,8 +16,6 @@ body{
 .daohang{
 	width:1264px;
 	height: 50px;
-	/*background:black;
-	opacity: 0.2;*/
 	position:absolute;
 	z-index:3;
 }
@@ -91,6 +89,7 @@ body{
 	margin:0px auto;
 }
 .above1{
+	float: left;
 	top:400px;
 	width:1263px;
 	height:505px;
@@ -126,10 +125,17 @@ body{
 	z-index: 99;
 	position:relative;
 }
+.five .f{
+	float: left;
+	display: inline;
+    width:165px;
+    height:165px;
+    margin-left: 50px;
+}
 .five img{
 	display: none;
 	width:165px;
-	margin-left: 50px;
+	/*margin-left: 50px;*/
     border-radius: 50%;
 }
 .text p{
@@ -138,6 +144,7 @@ body{
 	font-size:40px;
 }
 .above2{
+	float:left;
 	top:450px;
 	left:80px;
 	width:1263px;
@@ -170,6 +177,7 @@ body{
 	text-indent: 2em;
 }
 .above3{
+	float:left;
 	position:relative;
 	top:500px;
 	width:1263px;
@@ -187,13 +195,21 @@ body{
 	position:relative;
 	z-index: 3;
 }
+.above3 .hidden3{
+	position: relative;
+	top:-562px;
+	width:1263px;
+	height:505px;
+	background-color:black;
+	opacity: 0.5; 
+}
 .fix{
 	position:fixed;
 	z-index:2;
 	top:180px;
 	right:0px;
 	width:50px;
-	height:355px;
+	height:305px;
 	background:black;
 	opacity: 0.5;
 }
@@ -205,6 +221,7 @@ body{
     border-bottom:1px solid rgb(88,91,90);
 }
 .footer{
+	float: left;
 	position: relative;
 	top:600px;
 	width:1264px;
@@ -228,6 +245,7 @@ body{
 .head{
 	font-size: 16px;
 	font-weight: bolder;
+	margin-top:10px;
 	margin-bottom: 10px;
 }
 .footer ul li{
@@ -250,5 +268,55 @@ body{
 }
 .p1{
 	margin-left: 70px;
-	margin-top:40px;
+	margin-top:60px;
+}
+.box{
+	top:-900px;
+	width:1020px;
+	height:230px;
+	margin:10px auto;
+	position: relative;
+	overflow: hidden;
+}
+.slider{
+	width:3060px;
+	position:absolute;
+	left:-340px;
+	z-index: 99;
+}
+.slide{
+	overflow:hidden;
+	float:left;
+	margin-right: 25px;
+	margin-left: 25px;
+}
+.slider img{
+	width: 290px;
+	height:195px;
+}
+.box>span{
+	display:block;
+	width:30px;
+	height:50px;
+	text-align: center;
+	cursor:pointer;
+	color:white;
+	top:80px;
+	line-height:50px;
+	font-size:50px;
+	position: absolute;
+	opacity: 0;
+	z-index: 99;
+}
+#left{
+	left:0px;
+}
+#right{
+	right:0px;
+}
+/*.nav .active{
+	color:white;
+}*/
+.nav>li span{
+	margin-left:5px;
 }
