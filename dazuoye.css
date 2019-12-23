@@ -14,7 +14,7 @@ body{
 	background:#FFFAF4;
 }
 .daohang{
-	/*width:1264px;*/
+	width:100%;
 	height: 50px;
 	position:absolute;
 	z-index:3;
@@ -39,7 +39,6 @@ body{
 	height:80px;
 	border:1px solid white;
 	background:white;
-	/*opacity: 0.8;*/
     display: block;
     z-index: 99;
     border-radius: 10px;
@@ -68,8 +67,8 @@ body{
 	display: none;
 }
 .back img{
-	/*width:1263px;*/
-	height:505px;
+	width:100%;
+	height:550px;
 	position:absolute;
 }
 .back #logo{
@@ -79,48 +78,57 @@ body{
 	z-index:3;
 	margin:20px;
 }
-.above img{
+.above{
 	position: relative;
-	top: 400px;
+	top:400px;
+}
+.above .im{
+	width: 1000px;
+	height:340px;
+	margin:0px auto;
+ }
+.above img{
 	left:130px;
 	z-index:2;
 	width:1000px;
 	height:340px;
-	margin:0px auto;
 }
 .above1{
 	float: left;
 	top:400px;
-	/*width:1263px;*/
+	width:100%;
 	height:505px;
 	position:relative;
 }
 .above1>img{
-    /*width:1263px;*/
-	height:505px;
+    width:100%;
+	height:550px;
 	position:relative;
 }
 .above1 .hidden1{
-	/*width:1263px;*/
-	height:505px;
+	width:100%;
+	height:550px;
 	z-index: 2;
-	top:-508px;
+	top:-555px;
 	position:relative;
 	background:black;
 	opacity: 0.5;
 }
 .above1 .text{
-	width:200px;
+	width:100%;
 	height:40px;
 	position:relative;
 	top:-1000px;
-	left:550px;
 	z-index:3;
+	text-align: center;
+}
+.text p{
+	text-align: center;
 }
 .above1 .five{
 	top:-900px;
-	margin-left: 50px;
-	width:1264px;
+	margin:0px auto;
+	width:1100px;
 	height:165px;
 	z-index: 99;
 	position:relative;
@@ -135,10 +143,10 @@ body{
 .five img{
 	display: none;
 	width:165px;
-	/*margin-left: 50px;*/
     border-radius: 50%;
 }
 .text p{
+	text-align: center;
 	font-family:微软雅黑;
 	color:white;
 	font-size:40px;
@@ -146,17 +154,20 @@ body{
 .above2{
 	float:left;
 	top:450px;
-	left:80px;
-	width:1263px;
-	height:505px;
+	width:100%;
+	height:550px;
 	position:relative;
+}
+.above2 .a2{
+	width:1120px;
+	height:300px;
+	margin:0px auto;
 }
 .above2 .text p{
 	color:black;
 }
 .above2 .text{
 	margin-bottom:50px;
-	margin-left:450px;
 }
 .above2 img{
 	float:left;
@@ -180,26 +191,24 @@ body{
 	float:left;
 	position:relative;
 	top:500px;
-	/*width:1263px;*/
-	height:505px;
+	width:100%;
+	height:550px;
 }
 .above3 img{
 	position:relative;
-	/*top:10px;*/
-	/*width:1263px;*/
-	height:505px;
+	width:100%;
+	height:550px;
 }
 .above3 p{
 	top:-500px;
-	left:550px;
 	position:relative;
 	z-index: 3;
 }
 .above3 .hidden3{
 	position: relative;
-	top:-562px;
-	width:1263px;
-	height:505px;
+	top:-605px;
+	width:100%;
+	height:550px;
 	background-color:black;
 	opacity: 0.5; 
 }
@@ -224,10 +233,9 @@ body{
 	float: left;
 	position: relative;
 	top:600px;
-	width:1264px;
+	width:100%;
 	height:400px;
 	background:#5B5B5B;
-    /*border:1px solid #EEEEEE;*/
 }
 .footer img{
 	float: left;
@@ -239,7 +247,6 @@ body{
 .footer .wenzi{
 	width:800px;
 	height:150px;
-	/*border:1px solid gray;*/
 	margin-left: 500px;
 }
 .head{
@@ -314,9 +321,6 @@ body{
 #right{
 	right:0px;
 }
-/*.nav .active{
-	color:white;
-}*/
 .nav>li span{
 	margin-left:5px;
 }
