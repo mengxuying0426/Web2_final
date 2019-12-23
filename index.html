@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Love Travel</title>
+		<link rel="stylesheet" href="dazuoye1.css">
+		<style></style>
+	</head>
+	<body>
+	    <div class="daohang">
+	    	<ul class="list">
+	    		<li><a href="#" class="a1">首页</a></li>
+				<li><a href="#" class="a2">休憩一刻</a>
+				    <ul class="sec">
+				    	<li><a href="#"/>Special</li>
+				    	<li><a href="#"/>美食</li>
+				    	<li><a href="#"/>甜品</li>
+				    </ul>
+				</li>
+				<li><a href="#" class="a3">异域风景</a>
+				    <ul class="sec">
+				    	<li><a href="#"/>风情</li>
+				    	<li><a href="#"/>山水</li>
+				    	<li><a href="#"/>飘雪</li>
+				    </ul>
+				</li>
+				<li><a href="#" class="a4">酒店预约</a>
+				    <ul class="sec">
+				    	<li><a href="#"/>奢华体验</li>
+				    	<li><a href="#"/>酒店</li>
+				    	<li><a href="#"/>民宿</li>
+				    </ul>
+				</li>
+				<!-- <li><a href="#" class="a5">更多...</a></li> -->
+				<div class="login">
+				<li><a href="#">注册</a></li>
+				<li><a href="#">登录</a></li>
+			    </div>
+			</ul>
+		</div>
+	    <div class="back">
+	        <img id="logo" src="images/b16.png" alt="">
+	        <img id="img" src="images/b9.jpg" alt="">
+	    </div>
+	    <div class="above">
+	    	<img src="images/b15.png" alt="">
+	    </div>
+	    <div class="above1">
+	    	<img src="images/b5.jpg" alt="">
+	    	<div class="hidden1"></div>
+	    	<div class="text"><p>休憩时刻</p></div>
+	    	<div class="five" id="five">
+	    		<img class="f1" src="images/a5.png" alt="">
+	    		<img class="f1" src="images/a2.png" alt="">
+	    		<img class="f1" src="images/a1.png" alt="">
+	    		<img class="f1" src="images/a4.png" alt="">
+	    		<img class="f1" src="images/a3.png" alt="">
+	    	</div>
+	    </div>
+	    <div class="above2">
+	        <div class="text"><p>异国风情</p></div>
+	    	<img src="images/b12.jpg" alt="">
+	    	<div class="hidden2">
+	    		<p class="p">您是否会在阿布扎比停留几个小时，亲身体验一下这座城市的魅力？您是否已经抵达阿布扎比，想知道未来几天怎样才能不虚此行？您是否希望规划您的家庭度假旅行，尽情享受在阿布扎比的美好时光？</p>
+	    	</div>
+	    </div>
+	    <div class="above3">
+	    	<img src="images/b10.jpg" alt="">
+	    	<div class="text"><p>奢华体验</p></div>
+	    </div>
+		<div class="fix" id="fix">
+			<ul style="float:left">
+			    <li><img src="images/wx.png" alt="banner"/></li>
+			    <li><img src="images/qq.png"/></li>
+			    <li><img src="images/wb.png"/></li>
+			    <li><img src="images/erweima.png"/></li>
+			    <li id="gotop"><img src="images/gotop.png"/></li>
+			</ul>
+	    </div>
+	    <div class="footer">
+	        <img src="images/b16.png" alt="">
+	        <div class="wenzi">
+	        <div class="head">
+	    	<ul>
+	    		<li>关于我们</li>
+	    		<li>网站条款</li>
+	    		<li>帮助中心</li>
+	    		<li>加入爱旅</li>
+	    	</ul></div>
+	    	<ul>
+	    		<li>爱旅简介</li>
+	    		<li>会员条款</li>
+	    		<li>新手上路</li>
+	    		<li>招聘职位</li>
+	    	</ul>
+	    	<ul>
+	    		<li>联系我们</li>
+	    		<li>社区指南</li>
+	    		<li>网站地图</li>
+	    		<li>招聘职位</li>
+	    	</ul>
+	    	<ul>
+	    		<li>合作伙伴</li>
+	    		<li>版权声明</li>
+	    		<li>使用帮助</li>
+	    		<li>招聘职位</li>
+	    	</ul>
+	    	<ul>
+	    		<li>爱旅简介</li>
+	    		<li>会员条款</li>
+	    		<li>免责声明</li>
+	    		<li>旅行工具</li>
+	    	</ul>
+	    	</div>
+	    	<div class="yejiao">
+	    	    <div class="p1">
+	    		<p>© 爱旅网® qyer.com All rights reserved. Version v5.57  京ICP备12003524号  京公网安备11010102001935</p><br/></div>
+	    		<div class="p2">
+                <p>爱旅网为旅行者提供原创实用的出境游旅行指南和旅游攻略、旅行社区和问答交流平台，并提供签证、保险、机票、酒店预订、租车等服务。</p></div>
+	    	</div>
+	    </div>
+		<script type="text/javascript">
+		    var a=[3,9,11,14,1];
+		    var img=document.getElementById("img");
+		    var five=document.getElementById("five");
+		    var f1=document.getElementsByClassName("f1");
+		    var gotop=document.getElementById("gotop");
+		    var i=0;
+		    var c=1000;
+		    setInterval(
+		    	function(){
+                    img.setAttribute("src",'images/b'+a[i]+'.jpg');
+                    i=(i+1)%5;
+		    	}
+		    	,3000)
+		    function tan(){
+		    var timer1=setTimeout(
+		    	function(){
+                    f1[0].style.display='inline';
+		    },200)
+		    var timer2=setTimeout(
+		    	function(){
+                    f1[1].style.display='inline';
+		    },400)
+		    var timer3=setTimeout(
+		    	function(){
+                    f1[2].style.display='inline';
+		    },600)
+		    var timer4=setTimeout(
+		    	function(){
+                    f1[3].style.display='inline';
+		    },800)
+		    var timer5=setTimeout(
+		    	function(){
+                    f1[4].style.display='inline';
+		    },1000)
+		    }
+            var fix=document.getElementById("fix");
+            fix.onmouseover=function(){
+            	fix.style.opacity=1;
+            }
+            fix.onmouseout=function(){
+            	fix.style.opacity=0.5;
+            }
+            gotop.onclick=function(){
+            	window.scrollTo(0,0);
+            }
+		    // var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+		    // if(scrollTop>=480)
+		    // 	tan();
+		    //  console.log(scrollTop);
+		    window.onmouseover=function(e){
+		    	if(e.clientY>=90)
+		    		tan();
+		    }
+		</script>
+	</body>
+</html>
