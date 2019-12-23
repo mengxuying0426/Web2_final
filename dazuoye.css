@@ -14,7 +14,7 @@ body{
 	background:#FFFAF4;
 }
 .daohang{
-	width:1264px;
+	/*width:1264px;*/
 	height: 50px;
 	position:absolute;
 	z-index:3;
@@ -68,7 +68,7 @@ body{
 	display: none;
 }
 .back img{
-	width:1263px;
+	/*width:1263px;*/
 	height:505px;
 	position:absolute;
 }
@@ -91,17 +91,17 @@ body{
 .above1{
 	float: left;
 	top:400px;
-	width:1263px;
+	/*width:1263px;*/
 	height:505px;
 	position:relative;
 }
 .above1>img{
-    width:1263px;
+    /*width:1263px;*/
 	height:505px;
 	position:relative;
 }
 .above1 .hidden1{
-	width:1263px;
+	/*width:1263px;*/
 	height:505px;
 	z-index: 2;
 	top:-508px;
@@ -180,13 +180,13 @@ body{
 	float:left;
 	position:relative;
 	top:500px;
-	width:1263px;
+	/*width:1263px;*/
 	height:505px;
 }
 .above3 img{
 	position:relative;
 	/*top:10px;*/
-	width:1263px;
+	/*width:1263px;*/
 	height:505px;
 }
 .above3 p{
