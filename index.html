@@ -3,35 +3,34 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Love Travel</title>
-		<link rel="stylesheet" href="dazuoye1.css">
-		<style></style>
+		<link rel="stylesheet" href="dazuoye.css">
+		<script type="text/javascript" src="animate.js"></script>
 	</head>
 	<body>
 	    <div class="daohang">
 	    	<ul class="list">
 	    		<li><a href="#" class="a1">首页</a></li>
-				<li><a href="#" class="a2">休憩一刻</a>
+				<li><a href="#A1" class="a2">休憩一刻</a>
 				    <ul class="sec">
 				    	<li><a href="#"/>Special</li>
 				    	<li><a href="#"/>美食</li>
 				    	<li><a href="#"/>甜品</li>
 				    </ul>
 				</li>
-				<li><a href="#" class="a3">异域风景</a>
+				<li><a href="#A2" class="a3">异域风景</a>
 				    <ul class="sec">
 				    	<li><a href="#"/>风情</li>
 				    	<li><a href="#"/>山水</li>
 				    	<li><a href="#"/>飘雪</li>
 				    </ul>
 				</li>
-				<li><a href="#" class="a4">酒店预约</a>
+				<li><a href="#A3" class="a4">酒店预约</a>
 				    <ul class="sec">
 				    	<li><a href="#"/>奢华体验</li>
 				    	<li><a href="#"/>酒店</li>
 				    	<li><a href="#"/>民宿</li>
 				    </ul>
 				</li>
-				<!-- <li><a href="#" class="a5">更多...</a></li> -->
 				<div class="login">
 				<li><a href="#">注册</a></li>
 				<li><a href="#">登录</a></li>
@@ -43,30 +42,62 @@
 	        <img id="img" src="images/b9.jpg" alt="">
 	    </div>
 	    <div class="above">
+	        <div class="im">
 	    	<img src="images/b15.png" alt="">
+	    	</div>
 	    </div>
 	    <div class="above1">
 	    	<img src="images/b5.jpg" alt="">
 	    	<div class="hidden1"></div>
 	    	<div class="text"><p>休憩时刻</p></div>
 	    	<div class="five" id="five">
-	    		<img class="f1" src="images/a5.png" alt="">
-	    		<img class="f1" src="images/a2.png" alt="">
-	    		<img class="f1" src="images/a1.png" alt="">
-	    		<img class="f1" src="images/a4.png" alt="">
-	    		<img class="f1" src="images/a3.png" alt="">
+	    	    <div class="f">
+	    		<img id="f1" src="images/a5.png" alt=""></div>
+	    		<div class="f">
+	    		<img id="f2" src="images/a2.png" alt=""></div>
+	    		<div class="f">
+	    		<img id="f3" src="images/a1.png" alt=""></div>
+	    		<div class="f">
+	    		<img id="f4" src="images/a4.png" alt=""></div>
+	    		<div class="f">
+	    		<img id="f5" src="images/a3.png" alt=""></div>
 	    	</div>
 	    </div>
 	    <div class="above2">
 	        <div class="text"><p>异国风情</p></div>
+	        <div class="a2">
 	    	<img src="images/b12.jpg" alt="">
 	    	<div class="hidden2">
 	    		<p class="p">您是否会在阿布扎比停留几个小时，亲身体验一下这座城市的魅力？您是否已经抵达阿布扎比，想知道未来几天怎样才能不虚此行？您是否希望规划您的家庭度假旅行，尽情享受在阿布扎比的美好时光？</p>
+	    	</div>
 	    	</div>
 	    </div>
 	    <div class="above3">
 	    	<img src="images/b10.jpg" alt="">
 	    	<div class="text"><p>奢华体验</p></div>
+	    	<div class="hidden3"></div>
+	    	<div class="box" id="box">
+		    <div class="slider" id="slider">
+		        <div class="slide"><img src="images/r4.jpg" alt=""></div>
+		    	<div class="slide"><img src="images/r5.jpg" alt=""></div>
+		    	<div class="slide"><img src="images/r1.jpg" alt=""></div>
+		    	<div class="slide"><img src="images/r2.jpg" alt=""></div>
+		    	<div class="slide"><img src="images/r3.jpg" alt=""></div>
+		    	<div class="slide"><img src="images/r4.jpg" alt=""></div>
+		    	<div class="slide"><img src="images/r5.jpg" alt=""></div>
+		    	<div class="slide"><img src="images/r1.jpg" alt=""></div>
+		    	<div class="slide"><img src="images/r2.jpg" alt=""></div>
+		    </div>
+		    <span id="left"><</span>
+		    <span id="right">></span>
+		    <ul class="nav" id="nav">
+		    	<li class="active"><span></span></li>
+		    	<li><span></span></li>
+		    	<li><span></span></li>
+		    	<li><span></span></li>
+		    	<li><span></span></li>
+		    </ul>
+		</div>
 	    </div>
 		<div class="fix" id="fix">
 			<ul style="float:left">
@@ -123,37 +154,72 @@
 		    var a=[3,9,11,14,1];
 		    var img=document.getElementById("img");
 		    var five=document.getElementById("five");
-		    var f1=document.getElementsByClassName("f1");
+		    var f1=document.getElementById("f1");
+		    var f2=document.getElementById("f2");
+		    var f3=document.getElementById("f3");
+            var f4=document.getElementById("f4");
+		    var f5=document.getElementById("f5");
 		    var gotop=document.getElementById("gotop");
 		    var i=0;
 		    var c=1000;
+		    var k=0;
 		    setInterval(
 		    	function(){
-                    img.setAttribute("src",'images/b'+a[i]+'.jpg');
-                    i=(i+1)%5;
+                    img.setAttribute("src",'images/b'+a[k]+'.jpg');
+                    k=(k+1)%5;
 		    	}
 		    	,3000)
 		    function tan(){
 		    var timer1=setTimeout(
 		    	function(){
-                    f1[0].style.display='inline';
+                    f1.style.display='inline';
 		    },200)
 		    var timer2=setTimeout(
 		    	function(){
-                    f1[1].style.display='inline';
+                    f2.style.display='inline';
 		    },400)
 		    var timer3=setTimeout(
 		    	function(){
-                    f1[2].style.display='inline';
+                    f3.style.display='inline';
 		    },600)
 		    var timer4=setTimeout(
 		    	function(){
-                    f1[3].style.display='inline';
+                    f4.style.display='inline';
 		    },800)
 		    var timer5=setTimeout(
 		    	function(){
-                    f1[4].style.display='inline';
+                    f5.style.display='inline';
 		    },1000)
+		    }
+		    f1.onmouseover=function(){
+		    	f1.style.width="175px";
+		    }
+		    f1.onmouseout=function(){
+		    	f1.style.width="165px";
+		    }
+		     f2.onmouseover=function(){
+		    	f2.style.width="175px";
+		    }
+		    f2.onmouseout=function(){
+		    	f2.style.width="165px";
+		    }
+		    f3.onmouseover=function(){
+		    	f3.style.width="175px";
+		    }
+		    f3.onmouseout=function(){
+		    	f3.style.width="165px";
+		    }
+		    f5.onmouseover=function(){
+		    	f5.style.width="175px";
+		    }
+		    f5.onmouseout=function(){
+		    	f5.style.width="165px";
+		    }
+		    f4.onmouseover=function(){
+		    	f4.style.width="175px";
+		    }
+		    f4.onmouseout=function(){
+		    	f4.style.width="165px";
 		    }
             var fix=document.getElementById("fix");
             fix.onmouseover=function(){
@@ -165,14 +231,80 @@
             gotop.onclick=function(){
             	window.scrollTo(0,0);
             }
-		    // var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-		    // if(scrollTop>=480)
-		    // 	tan();
-		    //  console.log(scrollTop);
-		    window.onmouseover=function(e){
-		    	if(e.clientY>=90)
-		    		tan();
+            five.onmouseover=function(){
+            	tan();
+            }
+            var box=document.getElementById("box");
+		    var oNavlist=document.getElementById("nav").children;
+		    var slider=document.getElementById("slider");
+		    var left=document.getElementById("left");
+		    var right=document.getElementById("right");
+		    var index=1;
+		    var timer;
+		    var isMoving=false;
+		    function next(){
+		    	if(isMoving){
+		    		return;
+		    	}
+                isMoving=true;
+                index++;
+                navChange();
+		    	animate(slider,{left:-340*index},function(){
+                        if(index>5){
+                        	slider.style.left="-340px";
+                        	index=1;
+                        }
+                    isMoving=false;
+		        });
 		    }
+		    function prev(){
+                if(isMoving){
+		    		return;
+		    	}
+		    	isMoving=true;
+                index--;
+                navChange();
+		    	animate(slider,{left:-340*index},function(){
+                        if(index===0){
+                        	slider.style.left=-340*5+"px";
+                        	index=5;
+                        }
+                        isMoving=false;
+		        });
+		    }
+		    timer=setInterval(next,3000);
+		    box.onmouseover=function(){
+		    	animate(left,{opacity:50});
+		    	animate(right,{opacity:50});
+		    	clearInterval(timer);
+		    }
+		     box.onmouseout=function(){
+		    	animate(left,{opacity:0});
+		    	animate(right,{opacity:0});
+		    	timer=setInterval(next,3000);
+		    }
+		    right.onclick=next;
+            left.onclick=prev;
+            for(var i=0;i<oNavlist.length;i++){
+            	oNavlist[i].idx=i;
+            	oNavlist[i].onclick=function(){
+                    index=this.idx+1;
+                    navChange();
+            		animate(slider,{left:-340*index});
+            	}
+            }
+            function navChange(){
+            	for(var i=0;i<oNavlist.length;i++){
+            		oNavlist[i].className='';
+            	}
+            	if(index>5){
+            		oNavlist[0].className="active";
+            	}else if(index===0){
+            	    oNavlist[4].className="active";
+                }else{
+                    oNavlist[index-1].className="active";
+                }
+            }
 		</script>
 	</body>
 </html>
