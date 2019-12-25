@@ -1,26 +1,27 @@
 window.onload = function(){
-	var imgs = document.getElementsByClassName('big');
-	var im = document.getElementById("sss");
-	function bigger(){
-		im.style.width = '275px';
-  		im.style.height = '294px';
+	var aLi = document.getElementById("place").getElementsByTagName("li");
+	var aDiv = document.getElementById("change").getElementsByTagName("div");
+	for(var i=0;i<aLi.length;i++){
+		aLi[i].index = i;
+		aLi[i].onmouseover = function(){
+		for(var i=0;i<aLi.length;i++){
+		aLi[i].className = "";
+		aDiv[i].className = "hide";
+		}
+		this.className = "active";
+		aDiv[this.index].className = "show";
+		}
 	}
-	function smaller(){
-		im.style.width = '245px';
-  		im.style.height = '274px';	
+	var timeflag = document.getElementById("timeflag").getElementsByTagName("a");
+	for(var i=0;i<timeflag.length;i++){
+		timeflag[i].index = i;
+		timeflag[i].onclick = function(){
+		for(var i=0;i<aLi.length;i++){
+		timeflag[i].className = "";
+		}
+		this.className = "time1";
+		}
 	}
-	/*for (var i = imgs.length - 1; i >= 0; i--) {
-		function bigger(){
-		imgs[i].style.width = '275px';
-  		imgs[i].style.height = '294px';
-	}
-	function smaller(){
-		imgs[i].style.width = '245px';
-  		imgs[i].style.height = '274px';	
-	}*/
-	
-	}
-	
 }
 
 
