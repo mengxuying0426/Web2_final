@@ -398,7 +398,7 @@ html{
 	color:black;
 }
 .list>li:hover .sec li{
-	margin-left:20px;
+	
     display: block;
 }
 .list .login{
