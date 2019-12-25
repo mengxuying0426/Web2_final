@@ -43,6 +43,29 @@ window.onload = function () {
  var feedbackarrow = feedbackslide.children[1];
  var arrowChildren = feedbackarrow.children;
  var arrowleft=1;
+   var aLi = document.getElementById("place").getElementsByTagName("li");
+    var aDiv = document.getElementById("change").getElementsByTagName("div");
+    for(var i=0;i<aLi.length;i++){
+    aLi[i].index = i;
+    aLi[i].onmouseover = function(){
+    for(var i=0;i<aLi.length;i++){
+    aLi[i].className = "";
+  aDiv[i].className = "hide";
+}
+this.className = "active";
+aDiv[this.index].className = "show";
+}
+}
+var fix=document.getElementById("fix");
+ fix.onmouseover=function(){
+     fix.style.opacity=1;
+    }
+fix.onmouseout=function(){
+        fix.style.opacity=0.5;
+  }
+gotop.onclick=function(){
+          window.scrollTo(0,0);
+ }
  //设置一个开闭原则变量，点击以后修改这个值。
  var flag = true;
  move();
@@ -119,3 +142,7 @@ window.onload = function () {
   }
  }
 }
+  
+
+
+
