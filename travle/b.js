@@ -63,3 +63,13 @@ function animate(ele,json,fn){
   }
  },5);
 }
+   var fix=document.getElementById("fix");
+            fix.onmouseover=function(){
+              fix.style.opacity=1;
+            }
+            fix.onmouseout=function(){
+              fix.style.opacity=0.5;
+            }
+            gotop.onclick=function(){
+              window.scrollTo(0,0);
+            }
