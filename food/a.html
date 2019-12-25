@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>实践题 - 选项卡</title>
+    <style type="text/css">
+     /* CSS样式制作 */  
+*{margin:0;padding:0;font:normal 12px "微软雅黑";color:#000000;}
+ul{list-style-type: none;}
+    a{text-decoration: none;}
+
+#tab-list{width: 275px;height:190px;margin: 20px auto;}
+    #ul1{border-bottom: 2px solid #842;height: 32px;}
+/*#ul1 li{margin-left:5px;padding:0 10px;float:left;line-height:30px;border:1px solid #bbf;}*/
+    #ul1 li{display: inline-block;width: 60px;line-height: 30px;text-align: center;border: 1px solid #999;border-bottom: none;margin-left: 5px;}
+#ul1 li:hover{cursor: pointer;}
+#ul1 li.active{border-top:2px solid #900;border-bottom:2px solid #FFFFFF;}
+
+    #tab-list div{border:1px solid #bbf;height:150px;border-top:none;}
+#tab-list div li{height:30px;line-height:30px;text-indent:8px}
+.show{display: block;}.hide{display:none}
+    </style>
+    <script type="text/javascript">
+         
+    // JS实现选项卡切换
+window.onload = function(){
+var aLi = document.getElementById("ul1").getElementsByTagName("li");
+var aDiv = document.getElementById("tab-list").getElementsByTagName("div");
+for(var i=0;i<aLi.length;i++){
+aLi[i].index = i;
+aLi[i].onmouseover = function(){
+for(var i=0;i<aLi.length;i++){
+aLi[i].className = "";
+aDiv[i].className = "hide";
+}
+this.className = "active";
+aDiv[this.index].className = "show";
+}
+}
+}
+//  aLi[i].index = i;不加不会显示
+// this.className = "active";tab[i].className = "active";区别
+
+    </script>
+ 
+</head>
+<body>
+<!-- HTML页面布局 -->
+
+    <ul id="ul1">
+        <li id="tag1" >房产</li>
+        <li id="tag2" >家居</li>
+        <li id="tag3">二手房</li>
+    </ul>
+    <div id="tab-list">
+    <div id="first">
+        <ul>
+            <li><a class="itm" href="javascript:">法国</a></li>
+            <li><a class="itm" href="javascript:">马来西亚</a></li>
+            <li><a class="itm" href="javascript:"href="javascript:">意大利</a></li>
+                                <li><a class="itm" href="javascript:">香港</a></li>
+                                <li><a class="itm" href="javascript:">澳门</a></li>
+                                <li><a class="itm" href="javascript:">台湾</a></li>
+                                <li><a class="itm" href="javascript:">日本</a></li>
+        </ul>
+        <ul>
+            <li><a class="itm" href="javascript:">法国</a></li>
+                                <li><a class="itm" href="javascript:">马来西亚</a></li>
+                                <li><a class="itm" href="javascript:"href="javascript:">意大利</a></li>
+                                <li><a class="itm" href="javascript:">香港</a></li>
+                                <li><a class="itm" href="javascript:">澳门</a></li>
+                                <li><a class="itm" href="javascript:">台湾</a></li>
+                                <li><a class="itm" href="javascript:">bfgxbfgxb</a></li>
+        </ul>
+    </div>
+    <div id="second">
+        <ul>
+            <li><a class="itm" href="javascript:">法国</a></li>
+                                <li><a class="itm" href="javascript:">马来西亚</a></li>
+                                <li><a class="itm" href="javascript:"href="javascript:">意大利</a></li>
+                                <li><a class="itm" href="javascript:">香港</a></li>
+                                <li><a class="itm" href="javascript:">澳门</a></li>
+                                <li><a class="itm" href="javascript:">台湾</a></li>
+                                <li><a class="itm" href="javascript:">日本</a></li>
+        </ul>
+        <ul>
+            <li><a class="itm" href="javascript:">法国</a></li>
+                                <li><a class="itm" href="javascript:">马来西亚</a></li>
+                                <li><a class="itm" href="javascript:"href="javascript:">意大利</a></li>
+                                <li><a class="itm" href="javascript:">香港</a></li>
+                                <li><a class="itm" href="javascript:">澳门</a></li>
+                                <li><a class="itm" href="javascript:">台湾</a></li>
+                                <li><a class="itm" href="javascript:">gbsfsb</a></li>
+        </ul>
+    </div>
+    <div id="third">
+        <ul>
+            <li><a class="itm" href="javascript:">法国</a></li>
+                                <li><a class="itm" href="javascript:">马来西亚</a></li>
+                                <li><a class="itm" href="javascript:"href="javascript:">意大利</a></li>
+                                <li><a class="itm" href="javascript:">香港</a></li>
+                                <li><a class="itm" href="javascript:">澳门</a></li>
+                                <li><a class="itm" href="javascript:">台湾</a></li>
+                                <li><a class="itm" href="javascript:">日本</a></li>
+        </ul>
+        <ul>
+            <li><a class="itm" href="javascript:">法国</a></li>
+                                <li><a class="itm" href="javascript:">马来西亚</a></li>
+                                <li><a class="itm" href="javascript:"href="javascript:">意大利</a></li>
+                                <li><a class="itm" href="javascript:">香港</a></li>
+                                <li><a class="itm" href="javascript:">澳门</a></li>
+                                <li><a class="itm" href="javascript:">台湾</a></li>
+                                <li><a class="itm" href="javascript:">erfegdfbf</a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

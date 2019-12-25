@@ -3,6 +3,92 @@
 			padding: 0px;
 			margin: 0px;
 		}
+		a{
+			text-decoration: none;
+		}
+		html{
+			width:100%;
+			height:100%;
+		}
+		.show{display: block;}
+		.hide{display:none}
+		.daohang{
+			width:1500px;
+			height: 30px;
+			position:relative;
+			right:0px;
+			top: -10px;
+			z-index:20;
+			background-color:black;
+		}
+		.list{
+			margin-left: 600px;
+		}
+		.list>li{
+			width: 110px;
+			float: left;
+			font-size:14px;
+			font-weight: 600;
+			font-family: 微软雅黑;
+			margin: 10px 30px 10px 20px;
+			display:inline-block;
+			position: relative;
+			top: -5px;
+			right: 390px;
+
+		}
+		.list>li:hover .list>li{
+			color: rgba(34,139,34,0.8)
+			border-top:5px solid white;
+		}
+		.list>li:hover .sec{
+			margin-top: 10px;
+			width:80px;
+			height:80px;
+			
+			
+		    display: block;
+		    z-index: 99;
+		    border-radius: 10px;
+		    position: relative;
+		    right: 30px;
+		}
+		.list li a{
+			color: #BEBEBE;
+		}
+		.list li a:hover{
+			color: #00CD00;
+		}
+		.sec li a{
+			font-family: 微软雅黑;
+			font-weight:600;
+			font-size: 16px;
+			color:black;
+
+		}
+		.list>li:hover .sec li{
+			
+		    display: block;
+		}
+		.list .login{
+			width:120px;
+			height: 50px;
+			font-size: 14px;
+			float: right;
+		    position: relative;
+		    right: 250px;
+		    top: -8px;
+		    
+		}
+		.login li{
+			color: rgba(255,255,255,0.6);
+			margin:  13px 10px 10px 10px;
+			display: inline-block;
+		}
+		.sec li{
+			display: none;
+		}
+
 		.zhezhao{
 			height: 1000px;
 			height: 1500px;
@@ -90,7 +176,6 @@
     		background: url("r3.jpg") no-repeat fixed;
     		background-size: 1510px 700px;
     		padding:1px;
-    		/*box-sizing:border-box;*/
     		z-index:1;
 		}
 
@@ -101,7 +186,7 @@
 		    height:510px;
 		    position: absolute;
 		    left:0;
-		    top:0;
+		    top:0px;
 		    background: inherit;
 		    z-index: 2;
 		}
@@ -137,7 +222,7 @@
 		}
 		
 		.date{
-			width: 1100px;
+			width: 1130px;
 			height: 30px;
 			margin-top: 200px;
 			padding-bottom: 20px;
@@ -152,23 +237,29 @@
 			font-weight: 800;
 			font-size: 18px;
 		}
+		.title2{
+			position: relative;
+			top: 25px;
+			left: 0px;
+			font-weight: 800;
+			font-size: 18px;
+		}
 		.dest{
 			width: 1000px;
 			height: 50px;
 		}
 		.time1{
-			
 			border: 1px solid rgba(34,139,34,0.8);
 			border-radius:2em;
 			color: rgba(34,139,34,0.8);
 		}
-		.time{
 
+		#timeflag a{
 			width: 100px;
 			height: 50px;
 			margin-left: 50px;
 		}
-		.time:hover{
+		#timeflag a:hover{
 			color: rgba(34,139,34,0.8);
 		}
 		.year{
@@ -181,14 +272,12 @@
 			font-size: 14px;
 		}
 		.time2{
-
-			border: 1px solid rgba(34,139,34,0.8);
-			border-radius:2em;
-			color: rgba(34,139,34,0.8);
-			width: 100px;
-			height: 50px;
+			position: absolute;
+			top: 8px;
+			text-align: center;
+			width: 50px;
+			height: 20px;
 			margin-left: 70px;
-			/*margin-right: 20px;*/
 		}
 		.poiwrap{
 			display: inline-block;
@@ -198,23 +287,46 @@
 		.poiwrap li{
 			display: inline-block;
 			width: 70px;
-			/*padding-bottom: 20px;*/
 			margin-left: 20px;
 			text-align:center;
 		}
-		.poiwrap li:hover{
+		.poiwrap #place li:hover{
+			border: 1px solid rgba(34,139,34,0.8);
+			border-radius:2em;
+			color: rgba(34,139,34,0.8);
 			font-weight: 600;
-
-			/*color: rgba(34,139,34,0.8);*/
 		}
 		
-		.place{
-			position:absolute;
+		#place{
+			position:relative;
+			left: 50px;
+			top: -20px;
 			height: 30px;
 			width: 900px;
-			padding-top: 15px;
-			/*z-index: 10;*/
-			border-bottom:1px solid #D3D3D3;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid #D3D3D3;
+			
+		}
+		#place li{
+			width: 90px;
+		}
+		#change div{
+			position: relative;
+			top: -50px; 
+			float: left;
+			width: 1200px;
+			height: 80px;
+		}
+		#change div ul{
+			margin-top: 10px;
+		}
+		#change div ul li{
+			margin-top: 10px;
+			width: 120px;
+		}
+		#change div ul li:hover{
+			font-weight: 600;
 		}
 		.t-ipt1{
 			height: 23px;
@@ -239,27 +351,22 @@
 			display: inline-block;
 			border:1px solid #D3D3D3;
 			position:relative;
-			top:10px;
-			left: 680px;
+			top:-65px;
+			left: 920px;
 		}
 		.itm{
 			text-decoration:none;
 			color:#000;
-			/*border-bottom:1px solid #D3D3D3; */
-		}
-		.conitm{
-			margin-left: 30px; 
-			width: 800px;
-			height: 50px;
+			width: 150px;
 		}
 		.top-bk{
 			display: inline-block;
-			margin-top: 500px;
 			width:1380px;
 			height: 50px;
 			background-color:#D3D3D3;
 			padding-left: 130px;
-
+			position: relative;
+			top: -420px;
 		}
 		.c1{
 			font-size: 18px;
@@ -292,8 +399,18 @@
 			margin-right: 40px;
 			width: 255px;
 			height: 274px;
+			overflow: hidden;
+		}
+		.in{
+			position: relative;
+			left: 40px;
+			top: -40px;
+			width: 255px;
+			height: 274px;
 		}
 		.dbta{
+			
+			color: #fff;
 			z-index: 2px;
 			display: inline-block;
 			width:255px;
@@ -305,5 +422,122 @@
 			border-left: 1px solid #D3D3D3;
 			border-bottom: 1px solid #D3D3D3;
 			border-right: 1px solid #D3D3D3;
+		}
+		.dbta div{
+			position: relative;
+			left: 70px;
+			top: -10px;
+		}
+		.t1 tr td:hover .dbta{
+
+			background-color: rgba(0,0,0,0.7);
+
+		}
+		.t1 tr td:hover .dbta div p{
+			/*position: relative;
+			left: -65px;
+			top: -5px;*/
+			/*font-size: 25px;*/
+		}
+					
+		.footer{
+			float: left;
+			position: relative;
+			top:-350px;
+			width:100%;
+			height:500px;
+			background:#5B5B5B;
+		}
+		.footer img{
+			float: left;
+			margin-top:100px;
+			margin-left: 20px;
+			width:400px;
+			height:80px 
+		}
+		.footer .wenzi{
+			width:800px;
+			height:150px;
+			margin-left: 600px;
+		}
+		.head{
+			font-size: 16px;
+			font-weight: bolder;
+			margin-top:30px;
+			margin-bottom: 10px;
+		}
+		.footer ul li{
+			margin:10px 50px 10px 50px;
+			display: inline-block;
+			color:white;
+			font-size: 14px;
+		}
+		.yejiao{
+			position: relative;
+			top:70px;
+			width:800px;
+			height:50px;				
+			margin:0px auto;
+			top:100px;
+			}
+		.yejiao p{
+			font-size: 12px;
+			color:white;
+		}
+		.p1{
+			margin-left: 70px;
+			margin-top:100px;
+		}
+		.box{
+			top:-950px;
+			width:1020px;
+			height:230px;
+			margin:10px auto;
+			position: relative;
+			overflow: hidden;
+		}
+		.slider{
+			width:3060px;
+			position:absolute;
+			left:-340px;
+			z-index: 99;
+		}
+		.slide{
+			overflow:hidden;
+			float:left;
+			margin-right: 25px;
+			margin-left: 25px;
+		}
+		.slider img{
+			width: 290px;
+			height:195px;
+		}
+		.box>span{
+			display:block;
+			width:30px;
+			height:50px;
+			text-align: center;
+			cursor:pointer;
+			color:white;
+			top:80px;
+			line-height:50px;
+			font-size:50px;
+			position: absolute;
+			opacity: 0;
+			z-index: 99;
+		}
+		#left{
+			left:0px;
+		}
+		#right{
+			right:0px;
+		}
+		.nav>li span{
+			margin-left:5px;
+		}
+		.lastp{
+			position: relative;
+			top: -400px;
+
 		}
 	</style>
