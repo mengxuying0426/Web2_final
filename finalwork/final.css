@@ -3,6 +3,7 @@
 	margin: 0px;
 }
 a{
+	color: white;
 	text-decoration: none;
 }
 ul,ol{
@@ -11,6 +12,65 @@ ul,ol{
 input,button{
     outline:medium;
 }​
+
+/*nav*/
+.list{
+	margin-left: 600px;
+}
+.list>li{
+	float: left;
+	font-weight: bolder;
+	font-size:18px;
+	font-family: 微软雅黑;
+	margin: 10px 30px 10px 30px;
+	display:inline-block;
+}
+.list>li:hover .list>li{
+	border-top:5px solid white;
+}
+.list>li:hover .sec{
+	margin-top: 10px;
+	width:80px;
+	height:80px;
+	border:1px solid white;
+    display: block;
+    z-index: 99;
+}
+.sec li a{
+	font-family: 微软雅黑;
+	font-weight:500;
+	font-size: 14px;
+	color:white;
+}
+.list>li:hover .sec li{
+	margin-left:20px;
+    display: block;
+}
+.list .login{
+	width:120px;
+	height: 50px;
+	font-size: 16px;
+    float:right;
+    margin-left: 220px;
+}
+.login li{
+	margin:  13px 10px 10px 10px;
+	display: inline-block;
+}
+.sec li{
+	display: none;
+}
+.back img{
+	width:100%;
+	height:550px;
+}
+.back #logo{
+	position:absolute;
+	width:200px;
+	height:40px;
+	z-index:3;
+	margin:20px;
+}
 /*head*/
 .head-banner{
 	height: 600px;
@@ -64,7 +124,7 @@ input,button{
 }
 /*contant*/
 .contant{
-	height: 1300px;
+	height: 1500px;
 	width: 1200px;
 	border-radius: 10px;
 	border:3px solid rgba(255,250,240,0.8);
@@ -166,26 +226,12 @@ input,button{
 	margin-right: 10px;
 	position: relative;
 }
-/*.s2{
-	height: 250px;
-	width: 280px;
-	border-radius: 10px;
-	overflow: hidden;
-	float: left;
-	margin-right: 10px;
-	position: relative;
-}*/
 .s1 img{
 	height: 250px;
 	width: 340px;
 	float: left;
 
 }
-/*.s2 img{
-	height: 250px;
-	width: 280px;
-	float: left;
-}*/
 .s3{
 	height: 250px;
 	width: 450px;
@@ -210,8 +256,9 @@ input,button{
 	background-color: rgba(70,70,68,0.6);
 	position: absolute;
 	bottom: 0px;
-	color: white;
-	font-size: 14.83px;
+	color: rgb(255,240,245);
+	font-size: 17px;
+	text-align: center;
 	line-height: 25px;
 }
 .p11>div>div:hover .hr{
@@ -221,13 +268,123 @@ input,button{
 	top: 0px;
 	left: 0px;
 }
-.p11>div>div:hover .hr .p1{
+.p11>div>div:hover .hr .x1{
 	margin-top: 120px;
 }
+
+
+.final{
+	margin-top: 25px;
+	float: left;
+	width: 100%;
+	height: 600px;
+	position: relative;
+	background-color: rgb(84,255,159);
+}
+.jianjie1{
+	margin-top: 50px;
+	height: 170px;
+	width: 170px;
+	border-radius: 25%;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+.jianjie1 img{
+	height: 170px;
+	width: 170px;
+	border-radius: 25%;
+}
+.jianjie2{
+	height: 170px;
+	width: 170px;
+	border-radius: 25%;
+	position: absolute;
+	top: 350px;
+	left: 30px;
+}
+.jianjie2 img{
+	height: 170px;
+	width: 170px;
+	border-radius: 25%;
+}
+.jianjie3{
+	margin-top: 50px;
+	height: 170px;
+	width: 170px;
+	border-radius: 25%;
+	position: absolute;
+	top: 30px;
+	left: 1300px;
+}
+.jianjie3 img{
+	height: 170px;
+	width: 170px;
+	border-radius: 25%;
+}
+.jianjie4{
+	height: 170px;
+	width: 170px;
+	border-radius: 25%;
+	position: absolute;
+	top: 350px;
+	left: 1300px;
+}
+.jianjie4 img{
+	height: 170px;
+	width: 170px;
+	border-radius: 25%;
+}
+.box{
+	float: left;
+	height: 500px;
+	width: 1000px;
+	border:3px solid rgb(0,205,102);
+	border-radius:10px;
+	margin: 25px 250px;
+	position: relative;
+	overflow: hidden;
+}
+.slider{
+	width: 7000px;
+	position: absolute;
+	left: -1000px;
+}
+.slide{
+	width: 1000px;
+	overflow: hidden;
+	float: left;
+}
+.slide>img{
+	height: 500px;
+	width: 1000px;
+}
+.box>span{
+	display: block;
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	top: 250px;
+	line-height: 50px;
+	background: black;
+	font-size: 50px;
+	position: absolute;
+	opacity: 0;
+	border-radius: 50%;
+}
+#left{
+	left: 30px;
+}
+#right{
+	right: 30px;
+}
+
 .footer{
 	float: left;
 	position: relative;
-	top:100px;
+	top:0px;
 	width:100%;
 	height:500px;
 	background:#5B5B5B;
@@ -249,7 +406,7 @@ input,button{
 	margin:10px 50px 10px 50px;
 	display: inline-block;
 	color:white;
-	font-size: 14px;
+	font-size: 16px;
 }
 .yejiao{
 	position: relative;
@@ -260,7 +417,7 @@ input,button{
 	top:100px;
 }
 .yejiao p{
-	font-size: 12px;
+	font-size: 12.5px;
 	color:white;
 }
 .p1{
