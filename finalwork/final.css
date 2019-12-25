@@ -1,0 +1,270 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+a{
+	text-decoration: none;
+}
+ul,ol{
+	list-style: none;
+}
+input,button{
+    outline:medium;
+}​
+/*head*/
+.head-banner{
+	height: 600px;
+	width: 100%;
+	position: relative;
+}
+.banner{
+	width: 100%;
+	height: 560px;
+	border-bottom-left-radius: 15%;
+	border-bottom-right-radius: 15%;
+	overflow: hidden;
+}
+.banner li{
+	width: 100%;
+	height: 600px;
+	display: none;
+
+}
+.banner li.sp{
+	display: block;
+}
+.gailan{
+	height: 350px;
+	width: 280px;
+	position: absolute;
+	top: 100px;
+	right: 50px;
+	border-radius: 9px;
+	background-color: rgba(54,54,54,0.7);
+	border:3px solid rgba(130,130,130,0.2);
+}
+.ngl{
+	height: 348px;
+	width: 278px;
+	border-radius: 9px;
+	border:1px solid rgb(200,200,200);
+}
+.ngl li{
+	margin-top: 9px;
+	margin-left: 1px;
+	height: 45px;
+	width: 276px;
+	border-radius: 5px;
+	color: rgb(240,255,240);
+	text-align: center;
+	line-height: 45px;
+}
+.sty{
+	background:rgb(102,205,170);
+}
+/*contant*/
+.contant{
+	height: 1300px;
+	width: 1200px;
+	border-radius: 10px;
+	border:3px solid rgba(255,250,240,0.8);
+	/*position: absolute;
+	top: 500px;*/
+	margin: -50px auto;
+	background-color: rgb(255,255,240);
+}
+.seach{
+	height: 100px;
+	width: 1000px;
+	margin: 20px auto;
+}
+
+.many select{
+	float: right;
+	/*border: 2px solid #ccc;*/
+	border-radius: 10px;
+	width: 100px;
+	height: 70px;
+	font-size: 20px;
+	text-align: center;
+	line-height: 70px;
+}
+.seach input{
+	float: left;
+	background-color: rgb(245,245,245);
+	color: #ccc;
+	margin-left: 10px;
+	font-size: 25px;
+	width: 750px;
+	height: 60px;
+	border-radius: 10px;
+}
+.seach button{
+	float: left;
+	background-color: rgb(0,238,118);
+	color: white;
+	margin-left: 10px;
+	font-size: 25px;
+	width: 100px;
+	height: 60px;
+	border-radius: 10px;
+
+}
+.list1 li{
+	margin-left: 25px;
+	float: left;
+	height: 50px;
+	width: 100px;
+	border-radius: 10px;
+	background-color: rgba(0,205,120);
+	border: 2px solid rgba(84,255,159,0.6);
+	text-align: center;
+	line-height: 50px;
+}
+.list1 li a{
+	color: white;
+	font-size: 23px;
+}
+
+.p11{
+	height: 600px;
+	width: 1200px;
+	margin-left:75px; 
+	margin-bottom: 20px;
+}
+.p11>p{
+	margin-top:100px;
+	width: 400px;
+	height: 40px;
+	font-size: 30px;
+	font-weight: bold;
+	color: rgb(0,238,118);
+	line-height: 40px;
+	margin-bottom: 20px;
+}
+.p22{
+	height: 600px;
+	width: 1200px;
+	margin-left: 75px;
+}
+.p22>p{
+	width: 600px;
+	height: 40px;
+	font-size: 30px;
+	font-weight: bold;
+	color: rgb(0,238,118);
+	line-height: 40px;
+	margin-bottom: 20px;
+}
+
+.s1{
+	height: 250px;
+	width: 340px;
+	border-radius: 10px;
+	overflow: hidden;
+	float: left;
+	margin-right: 10px;
+	position: relative;
+}
+/*.s2{
+	height: 250px;
+	width: 280px;
+	border-radius: 10px;
+	overflow: hidden;
+	float: left;
+	margin-right: 10px;
+	position: relative;
+}*/
+.s1 img{
+	height: 250px;
+	width: 340px;
+	float: left;
+
+}
+/*.s2 img{
+	height: 250px;
+	width: 280px;
+	float: left;
+}*/
+.s3{
+	height: 250px;
+	width: 450px;
+	border-radius: 10px;
+	overflow: hidden;
+	float: left;
+	margin-right: 10px;
+	position: relative;
+}
+.s4{
+	height: 250px;
+	width: 290px;
+	border-radius: 10px;
+	overflow: hidden;
+	float: left;
+	margin-right: 10px;
+	position: relative;
+}
+.hr{
+	width: 340px;
+	height: 51px;
+	background-color: rgba(70,70,68,0.6);
+	position: absolute;
+	bottom: 0px;
+	color: white;
+	font-size: 14.83px;
+	line-height: 25px;
+}
+.p11>div>div:hover .hr{
+	height: 250px;
+	position: absolute;
+	background-color: rgba(70,70,68,0.6);
+	top: 0px;
+	left: 0px;
+}
+.p11>div>div:hover .hr .p1{
+	margin-top: 120px;
+}
+.footer{
+	float: left;
+	position: relative;
+	top:100px;
+	width:100%;
+	height:500px;
+	background:#5B5B5B;
+}
+.footer img{
+	float: left;
+	margin-top:100px;
+	margin-left: 20px;
+	width:400px;
+	height:80px 
+}
+.footer .wenzi{
+	width:800px;
+	height:150px;
+	margin-left: 600px;
+}
+
+.footer ul li{
+	margin:10px 50px 10px 50px;
+	display: inline-block;
+	color:white;
+	font-size: 14px;
+}
+.yejiao{
+	position: relative;
+	top:70px;
+	width:800px;
+	height:50px;
+	margin:0px auto;
+	top:100px;
+}
+.yejiao p{
+	font-size: 12px;
+	color:white;
+}
+.p1{
+	margin-left: 70px;
+	margin-top:100px;
+}
+
