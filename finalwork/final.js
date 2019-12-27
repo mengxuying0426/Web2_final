@@ -81,3 +81,30 @@ headbanner.onmouseout = function(){
 	}
 	right.onclick = next;
 	left.onclick = prev;
+//图标效果
+	var final1 = document.getElementById('final1');
+	var ji1 = document.getElementById('ji1');
+	var ji2 = document.getElementById('ji2');
+	var ji3 = document.getElementById('ji3')
+	var ji4 = document.getElementById("ji4");
+	function tan(){
+    var timer1=setTimeout(
+    	function(){
+            ji1.style.display='inline';
+		 },300)
+    var timer2=setTimeout(
+    	function(){
+            ji2.style.display='inline';
+    	},600)
+    var timer3=setTimeout(
+    	function(){
+            ji3.style.display='inline';
+    },800)
+    var timer4=setTimeout(
+    	function(){
+            ji4.style.display='inline';
+    },1000)
+  }
+  final1.onmouseover=function(){
+            	tan();
+            }

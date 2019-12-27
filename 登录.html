@@ -1,27 +1,35 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>Love Travel登录</title>
 <link rel="stylesheet" type="text/css" href="denglu.css">
+<style type="text/css">
+    .box{
+        /*background-color: rgba(79,79,79,0.2);*/
+    }
+</style>
 </head>
 <body>
 <div class="body">
 <div class="img">
-	<img src="../images/denglu.png">
+	<img src="images/denglu.png">
 </div>
 <div class="logo">
-	<img src="../images/b16.png">
+	<img src="images/b16.png">
 </div>
 <div class="box">
     <h1>请登录</h1>
     <input type="text" name="" placeholder="用户名">
     <input type="password" name="" placeholder="密码">
-    <input type="submit" name="" placeholder="Login">
+    <input id="login" type="submit" name="" placeholder="Login">
 </div>
 </div>
 <script>
-
+    var id=document.getElementById("login");
+    id.onclick=function(){
+        window.open("index.html");
+    }
 </script>
 
 </body>

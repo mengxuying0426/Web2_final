@@ -273,7 +273,7 @@ input,button{
 }
 
 
-.final{
+.final1{
 	margin-top: 25px;
 	float: left;
 	width: 100%;
@@ -289,6 +289,7 @@ input,button{
 	position: absolute;
 	top: 30px;
 	left: 30px;
+	display: none;
 }
 .jianjie1 img{
 	height: 170px;
@@ -302,6 +303,7 @@ input,button{
 	position: absolute;
 	top: 350px;
 	left: 30px;
+	display: none;
 }
 .jianjie2 img{
 	height: 170px;
@@ -316,6 +318,7 @@ input,button{
 	position: absolute;
 	top: 30px;
 	left: 1300px;
+	display: none;
 }
 .jianjie3 img{
 	height: 170px;
@@ -329,6 +332,7 @@ input,button{
 	position: absolute;
 	top: 350px;
 	left: 1300px;
+	display: none;
 }
 .jianjie4 img{
 	height: 170px;
