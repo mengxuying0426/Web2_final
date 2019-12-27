@@ -26,9 +26,6 @@ headbanner.onmouseover = function(){
 headbanner.onmouseout = function(){
 	time = setInterval(change,2000);
 }
-//图片放大
-var img = document.getElementsByTagName('img');
-console.log(img);
 
 //下边循环滚动图
 	var box = document.getElementById('box');
@@ -84,11 +81,3 @@ console.log(img);
 	}
 	right.onclick = next;
 	left.onclick = prev;
-
-	// for(var i = 0;i<oNavlist.length;i++){
-	// 	oNavlist[i].idx = i;
-	// 	oNavlist[i].onclick = function(){
-	// 		index = this.idx + 1;
-	// 		animate(slider,{left:-700*index})
-	// 	}
-	// }
