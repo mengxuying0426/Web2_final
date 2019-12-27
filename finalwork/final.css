@@ -223,16 +223,19 @@ input,button{
 	border-radius: 10px;
 	overflow: hidden;
 	float: left;
+	margin-top: 10px;
 	margin-right: 10px;
 	position: relative;
 }
 .s1 img{
+	margin-top: 10px;
 	height: 250px;
 	width: 340px;
 	float: left;
 
 }
-.s3{
+.s3{ 
+	margin-top: 10px;
 	height: 250px;
 	width: 450px;
 	border-radius: 10px;
@@ -242,6 +245,7 @@ input,button{
 	position: relative;
 }
 .s4{
+	margin-top: 10px;
 	height: 250px;
 	width: 290px;
 	border-radius: 10px;
@@ -345,7 +349,7 @@ input,button{
 	width: 1000px;
 	border:3px solid rgb(0,205,102);
 	border-radius:10px;
-	margin: 25px 250px;
+	margin: 45px 250px;
 	position: relative;
 	overflow: hidden;
 }
